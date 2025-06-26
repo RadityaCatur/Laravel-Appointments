@@ -1,6 +1,10 @@
 <?php
 
-Route::redirect('/', '/login');
+Route::get('/', function () {
+    return view('landing');
+})->name('landing');
+
+Route::redirect('/login', '/login');
 Route::redirect('/home', '/admin');
 Auth::routes(['register' => false]);
 

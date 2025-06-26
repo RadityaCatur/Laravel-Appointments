@@ -2,16 +2,16 @@
 
 return [
     'userManagement' => [
-        'title'          => 'User management',
-        'title_singular' => 'User management',
+        'title'          => 'Manajemen User',
+        'title_singular' => 'Manajemen User',
     ],
     'permission'     => [
-        'title'          => 'Permissions',
-        'title_singular' => 'Permission',
+        'title'          => 'Fitur',
+        'title_singular' => 'Fitur',
         'fields'         => [
             'id'                => 'ID',
             'id_helper'         => '',
-            'title'             => 'Title',
+            'title'             => 'Nama Fitur',
             'title_helper'      => '',
             'created_at'        => 'Created at',
             'created_at_helper' => '',
@@ -22,14 +22,14 @@ return [
         ],
     ],
     'role'           => [
-        'title'          => 'Roles',
-        'title_singular' => 'Role',
+        'title'          => 'Peran',
+        'title_singular' => 'Peran',
         'fields'         => [
             'id'                 => 'ID',
             'id_helper'          => '',
-            'title'              => 'Title',
+            'title'              => 'Level',
             'title_helper'       => '',
-            'permissions'        => 'Permissions',
+            'permissions'        => 'Fitur',
             'permissions_helper' => '',
             'created_at'         => 'Created at',
             'created_at_helper'  => '',
@@ -40,8 +40,8 @@ return [
         ],
     ],
     'user'           => [
-        'title'          => 'Users',
-        'title_singular' => 'User',
+        'title'          => 'Pengguna',
+        'title_singular' => 'Pengguna',
         'fields'         => [
             'id'                       => 'ID',
             'id_helper'                => '',
@@ -84,8 +84,8 @@ return [
         ],
     ],
     'employee'       => [
-        'title'          => 'Employees',
-        'title_singular' => 'Employee',
+        'title'          => 'Pelatih',
+        'title_singular' => 'Pelatih',
         'fields'         => [
             'id'                => 'ID',
             'id_helper'         => '',
@@ -108,8 +108,8 @@ return [
         ],
     ],
     'client'         => [
-        'title'          => 'Clients',
-        'title_singular' => 'Client',
+        'title'          => 'Murid',
+        'title_singular' => 'Murid',
         'fields'         => [
             'id'                => 'ID',
             'id_helper'         => '',
@@ -117,7 +117,7 @@ return [
             'name_helper'       => '',
             'phone'             => 'Phone',
             'phone_helper'      => '',
-            'email'             => 'Email',
+            'email'             => 'Username',
             'email_helper'      => '',
             'created_at'        => 'Created at',
             'created_at_helper' => '',
@@ -129,7 +129,7 @@ return [
     ],
     'appointment'    => [
         'title'          => 'Appointments',
-        'title_singular' => 'Appointment',
+        'title_singular' => 'Appointments',
         'fields'         => [
             'id'                 => 'ID',
             'id_helper'          => '',
