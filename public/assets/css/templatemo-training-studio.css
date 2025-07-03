@@ -331,19 +331,19 @@ header
 }
 
 .header-area .main-nav .nav li:last-child a:hover {
-  background-color: #74c2ce;
+  background-color: #fff;
   opacity: 1;
 }
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #019db2!important;
+  color: #74c2ce!important;
   opacity: 1;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #019db2!important;
+  color: #74c2ce!important;
   opacity: 1;
 }
 
@@ -661,7 +661,7 @@ banner
 
 .main-banner .caption h2 em {
   font-style: normal;
-  color: #019db2;
+  color: #74c2ce;
   font-weight: 900;
 }
 
@@ -672,27 +672,59 @@ features
 ---------------------------------------------
 */
 
-#features {
-  margin-bottom: 80px;
+#profil {
+  margin-bottom: 40px;
+}
+
+.section-heading {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.features-items-wrapper {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  flex-wrap: wrap; /* Biar responsif */
+  gap: 30px;
+}
+
+.features-items-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #8b8b8b; /* Sesuaikan warna <p> jika beda */
+  transform: translateX(-50%);
+}
+
+.features-items {
+  width: 48%; /* Biar ada spasi antar kolom */
+  padding: 0 15px;
+}
+
+.features-items.right {
+  margin-top: 50px; /* Atur agar sejajar logo */
 }
 
 .feature-item {
-  display: inline-block;
-  margin-bottom: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.feature-item .left-icon img {
-  float: left;
-  margin-right: 30px;
+.feature-item .icon img {
+  display: block;
+  margin: 0 auto 20px auto;
+  height: 10em;
 }
 
-.feature-item .right-content {
-  display: inline;
-}
-
-.feature-item .right-content h4 {
-  margin-top: 0px;
-  margin-bottom:  7px;
+.feature-item .content h4 {
+  margin-top: 0;
+  margin-bottom: 7px;
   letter-spacing: 0.25px;
   color: #232d39;
   font-size: 19px;
@@ -700,15 +732,34 @@ features
   text-transform: capitalize;
 }
 
-.feature-item .right-content a.text-button {
-  margin-top: 7px;
-  display: inline-block;
-  font-size: 13px;
-  text-transform: uppercase;
-  color: #019db2;
-  font-weight: 500;
-  border-radius: 10px;
+.features-items.right .feature-item .content {
+  text-align: left;
 }
+
+.feature-item .content p {
+  color: #777;
+  font-size: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .features-items-wrapper {
+    flex-direction: column;
+  }
+
+  .features-items {
+    width: 100%;
+  }
+
+  .features-items-wrapper::before {
+    display: none; /* Garis hilang di mobile biar ga ganggu */
+  }
+
+  .features-items.right {
+    margin-top: 30px; /* Sedikit jarak antar bagian di mobile */
+  }
+}
+
 
 /*
 ---------------------------------------------
@@ -716,9 +767,9 @@ subscribe
 ---------------------------------------------
 */
 
-#call-to-action {
-  padding: 120px 0px;
-  background-image: url(../images/join-now-bg.jpg);
+#penghargaan {
+  padding: 75px 0px;
+  background-image: url(../images/medals.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -744,7 +795,40 @@ subscribe
   margin: 15px 0px 25px 0px;
 }
 
+.penghargaan-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
 
+.penghargaan-item .left-icon img {
+  margin-right: 30px;
+  height: 7.5em;
+}
+
+.penghargaan-item .right-content {
+  flex: 1;
+}
+
+.penghargaan-item .right-content h4 {
+  margin-top: 0px;
+  margin-bottom:  7px;
+  letter-spacing: 0.25px;
+  color: #232d39;
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.penghargaan-item .right-content a.text-button {
+  margin-top: 7px;
+  display: inline-block;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #019db2;
+  font-weight: 500;
+  border-radius: 10px;
+}
 
 /*
 --------------------------------------------
@@ -752,7 +836,7 @@ Our Classes
 --------------------------------------------
 */
 
-#our-classes {
+#kelas {
   margin-bottom: 140px;
 }
 
@@ -839,111 +923,6 @@ Our Classes
   color: #7a7a7a;
   margin-bottom: 28px;
 }
-
-
-/* 
----------------------------------------------
-schedule
---------------------------------------------- 
-*/
-
-#schedule {
-  padding: 0px 0px 140px 0px;
-  background-image: url(../images/pool-bg.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#schedule table {
-  width: 100%;
-  text-align: center;
-  border: 1px solid #fff;
-}
-
-#schedule table tbody {
-  border-top: 1px solid #fff; 
-}
-
-#schedule table tbody tr {
-  border-bottom: 1px solid #fff;
-}
-
-#schedule table tbody tr td {
-  border-right: 1px solid #fff;
-  height: 100px;
-}
-
-#schedule table tr td {
-  color: #fff;
-  font-size: 13px;
-  text-transform: capitalize;
-  font-weight: 500;
-  letter-spacing: 0.25px;
-}
-
-.schedule-table.filtering .ts-item {
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.schedule-table.filtering .ts-item.show {
-    opacity: 1;
-    transition: all 0.5s;
-}
-
-#schedule .filters {
-  margin-bottom: 40px;
-}
-#schedule .filters ul {
-  padding: 0;
-  text-align: center;
-}
-#schedule .filters ul li {
-  list-style: none;
-  display: inline;
-  cursor: pointer;
-  position: relative;
-  margin-right: 10px;
-  font-size: 15px;
-  font-weight: 500;
-  color: #fff;
-  text-transform: capitalize;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-#schedule .filters ul li:after {
-  content: "/";
-  margin-left: 10px;
-  color: #fff;
-}
-#schedule .filters ul li:last-child {
-  margin-right: 0px;
-}
-#schedule .filters ul li:last-child::after {
-  display: none;
-}
-#schedule .filters ul li.active,
-#schedule .filters ul li:hover {
-  color: #019db2;
-}
-#schedule .filters-content {
-  margin-top: 50px;
-}
-#schedule .filters-content .show {
-  opacity: 1;
-  visibility: visible;
-  transition: all 350ms;
-}
-#schedule .filters-content .hide {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 350ms;
-}
-
 
 /* 
 ---------------------------------------------

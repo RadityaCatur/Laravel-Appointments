@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
         rel="stylesheet">
 
-    <title>Ngelangi Yuk</title>
+    <title>Ngelangi Yuk!</title>
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -47,17 +47,16 @@
                         <!-- ***** Logo Start ***** -->
                         <a href="/" class="logo">
                             <img src="{{ asset('assets/images/logo.png') }}" alt="Logo" class="logo-img">
-                            Ngelangi<em> Yuk</em>
+                            Ngelangi<em> Yuk!</em>
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="#profil">Profil</a></li>
                             <li class="scroll-to-section"><a href="#penghargaan">Penghargaan</a></li>
                             <li class="scroll-to-section"><a href="#kelas">Kelas</a></li>
-                            <li class="scroll-to-section"><a href="#pelatih">Pelatih</a></li>
-                            <li class="scroll-to-section"><a href="#lokasi">Lokasi</a></li>
+                            <li class="scroll-to-section"><a href="#trainers">Pelatih</a></li>
+                            <li class="scroll-to-section"><a href="#contact-us">Lokasi</a></li>
                             <li class="main-button"><a href="/login">Member</a></li>
                         </ul>
                         <a class='menu-trigger'>
@@ -82,7 +81,7 @@
                 <h6>disini teks disini teks</h6>
                 <h2>disini teks disini <em>teks</em></h2>
                 <div class="main-button scroll-to-section">
-                    <a href="#features">Gabung</a>
+                    <a href="#features">Gabung Ngelangi Yuk!</a>
                 </div>
             </div>
         </div>
@@ -90,70 +89,45 @@
     <!-- ***** Main Banner Area End ***** -->
 
     <!-- ***** Features Item Start ***** -->
-    <section class="section" id="features">
+    <section class="section" id="profil">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading">
-                        <h2>Profil Ngelangi <em>Yuk</em></h2>
-                        <img src="{{ asset('assets/images/line-dec.png') }}" alt="">
-                        <p>Training Studio is free CSS template for gyms and fitness centers. You are allowed to use
-                            this layout for your business website.</p>
+            <div class="row section-heading">
+                <div class="features-items-wrapper">
+                    <div class="features-items single-feature">
+                        <li class="feature-item">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/logo.png') }}" alt="Profil Kami">
+                            </div>
+                            <div class="content">
+                                <h4>Tentang Kami</h4>
+                                <p>Ngelangi Yuk! hadir sebagai komunitas dan penyedia les renang profesional yang lahir
+                                    dari semangat para atlet renang dan selam Kota Batu. Berdiri sejak 2021, kami
+                                    berkomitmen untuk menghadirkan pengalaman belajar renang yang menyenangkan, aman,
+                                    dan dapat dinikmati oleh semua kalangan.</p>
+                                <p>Kami percaya bahwa berenang bukan hanya sekadar olahraga, tetapi gaya hidup sehat
+                                    dan keterampilan penting yang wajib dikuasai sejak dini.</p>
+                            </div>
+                        </li>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="features-items">
+                    <div class="features-items single-feature right">
                         <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="{{ asset('assets/images/features-first-icon.png') }}" alt="First One">
-                            </div>
-                            <div class="right-content">
-                                <h4>Basic Fitness</h4>
-                                <p>Please do not re-distribute this template ZIP file on any template collection
-                                    website. This is not allowed.</p>
-                                <a href="#" class="text-button">Discover More</a>
+                            <div class="content">
+                                <h4>🌟 Visi:</h4>
+                                <p>Mewujudkan berenang sebagai gaya hidup sehat dan positif bagi semua kalangan, dari
+                                    anak-anak hingga lansia.</p>
                             </div>
                         </li>
                         <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="{{ asset('assets/images/features-first-icon.png') }}" alt="Second One">
-                            </div>
-                            <div class="right-content">
-                                <h4>New Gym Training</h4>
-                                <p>If you wish to support TemplateMo website via PayPal, please feel free to contact us.
-                                    We appreciate it a lot.</p>
-                                <a href="#" class="text-button">Discover More</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="features-items">
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="{{ asset('assets/images/features-first-icon.png') }}" alt="Fourth One">
-                            </div>
-                            <div class="right-content">
-                                <h4>Advanced Muscle Course</h4>
-                                <p>You may want to browse through <a rel="nofollow"
-                                        href="https://templatemo.com/tag/digital-marketing" target="_parent">Digital
-                                        Marketing</a> or <a href="https://templatemo.com/tag/corporate">Corporate</a>
-                                    HTML CSS templates on our website.</p>
-                                <a href="#" class="text-button">Discover More</a>
+                            <div class="content">
+                                <h4>🚀 Misi:</h4>
+                                <p>✅ Menjadikan berenang sebagai keterampilan wajib bagi anak-anak sebagai bentuk
+                                    pertahanan diri.</p>
+                                <p>✅ Memasyarakatkan olahraga renang sebagai aktivitas yang dapat dilakukan sepanjang
+                                    usia.</p>
+                                <p>✅ Memberikan pengalaman belajar renang yang aman, profesional, dan menyenangkan.</p>
                             </div>
                         </li>
-                        <li class="feature-item">
-                            <div class="left-icon">
-                                <img src="{{ asset('assets/images/features-first-icon.png') }}" alt="Fifth One">
-                            </div>
-                            <div class="right-content">
-                                <h4>Yoga Training</h4>
-                                <p>This template is built on Bootstrap v4.3.1 framework. It is easy to adapt the columns
-                                    and sections.</p>
-                                <a href="#" class="text-button">Discover More</a>
-                            </div>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -161,99 +135,159 @@
     <!-- ***** Features Item End ***** -->
 
     <!-- ***** Call to Action Start ***** -->
-    <section class="section" id="call-to-action">
+    <section class="section" id="penghargaan">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cta-content">
-                        <h2>Don’t <em>think</em>, begin <em>today</em>!</h2>
-                        <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus
-                            odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
-                        <div class="main-button scroll-to-section">
-                            <a href="#our-classes">Become a member</a>
-                        </div>
+                        <h2>Penghargaan</h2>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ***** Call to Action End ***** -->
-
-    <!-- ***** Our Classes Start ***** -->
-    <section class="section" id="our-classes">
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>Our <em>Classes</em></h2>
-                        <img src="{{ asset('assets/images/line-dec.png') }}" alt="">
-                        <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor,
-                            ultricies fermentum massa consequat eu.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="penghargaan-items">
+                        <li class="penghargaan-item">
+                            <div class="left-icon">
+                                <img src="{{ asset('assets/images/logo.png') }}" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Penghargaan 1</h4>
+                                <p>Nama: </p>
+                                <p>Umur: </p>
+                                <p>Jenis Kelas:</p>
+                            </div>
+                        </li>
+                        <li class="penghargaan-item">
+                            <div class="left-icon">
+                                <img src="{{ asset('assets/images/logo.png') }}" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Penghargaan 2</h4>
+                                <p>Nama: </p>
+                                <p>Umur: </p>
+                                <p>Jenis Kelas:</p>
+                            </div>
+                        </li>
+                        <li class="penghargaan-item">
+                            <div class="left-icon">
+                                <img src="{{ asset('assets/images/logo.png') }}" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Penghargaan 3</h4>
+                                <p>Nama: </p>
+                                <p>Umur: </p>
+                                <p>Jenis Kelas:</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="penghargaan-items">
+                        <li class="penghargaan-item">
+                            <div class="left-icon">
+                                <img src="{{ asset('assets/images/logo.png') }}" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Penghargaan 4</h4>
+                                <p>Nama: </p>
+                                <p>Umur: </p>
+                                <p>Jenis Kelas:</p>
+                            </div>
+                        </li>
+                        <li class="penghargaan-item">
+                            <div class="left-icon">
+                                <img src="{{ asset('assets/images/logo.png') }}" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Penghargaan 5</h4>
+                                <p>Nama: </p>
+                                <p>Umur: </p>
+                                <p>Jenis Kelas:</p>
+                            </div>
+                        </li>
+                        <li class="penghargaan-item">
+                            <div class="left-icon">
+                                <img src="{{ asset('assets/images/logo.png') }}" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Penghargaan 6</h4>
+                                <p>Nama: </p>
+                                <p>Umur: </p>
+                                <p>Jenis Kelas:</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <!-- ***** Call to Action End ***** -->
+
+    <!-- ***** Our Classes Start ***** -->
+    <section class="section" id="kelas">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Program <em>Unggulan</em></h2>
+                        <p>Setiap program didesain agar sesuai kebutuhan peserta, dengan bimbingan instruktur
+                            berpengalaman dan suasana latihan yang suportif.</p>
                     </div>
                 </div>
             </div>
             <div class="row" id="tabs">
                 <div class="col-lg-4">
                     <ul>
-                        <li><a href='#tabs-1'><img src="{{ asset('assets/images/tabs-first-icon.png') }}" alt="">First
-                                Training
-                                Class</a></li>
-                        <li><a href='#tabs-2'><img src="{{ asset('assets/images/tabs-first-icon.png') }}" alt="">Second
-                                Training
-                                Class</a></a></li>
-                        <li><a href='#tabs-3'><img src="{{ asset('assets/images/tabs-first-icon.png') }}" alt="">Third
-                                Training
-                                Class</a></a></li>
-                        <li><a href='#tabs-4'><img src="{{ asset('assets/images/tabs-first-icon.png') }}" alt="">Fourth
-                                Training
-                                Class</a></a></li>
-                        <div class="main-rounded-button"><a href="#">View All Schedules</a></div>
+                        <li><a href='#tabs-1'><img src="{{ asset('assets/images/line-dec.png') }}" alt="">Kelas Anak</a>
+                        </li>
+                        <li><a href='#tabs-2'><img src="{{ asset('assets/images/line-dec.png') }}" alt="">Kelas
+                                Dewasa</a></a></li>
+                        <li><a href='#tabs-3'><img src="{{ asset('assets/images/line-dec.png') }}" alt="">Kelas
+                                Perempuan</a></a></li>
+                        <li><a href='#tabs-4'><img src="{{ asset('assets/images/line-dec.png') }}" alt="">Kelas
+                                Terapi</a></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-8">
                     <section class='tabs-content'>
                         <article id='tabs-1'>
                             <img src="{{ asset('assets/images/training-image-01.jpg') }}" alt="First Class">
-                            <h4>First Training Class</h4>
+                            <h4>Kelas Grup dan Privat Anak</h4>
                             <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend
                                 hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem
                                 tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut,
                                 accumsan diam.</p>
-                            <div class="main-button">
-                                <a href="#">View Schedule</a>
-                            </div>
                         </article>
                         <article id='tabs-2'>
                             <img src="{{ asset('assets/images/training-image-02.jpg') }}" alt="Second Training">
-                            <h4>Second Training Class</h4>
+                            <h4>Kelas Dewasa</h4>
                             <p>Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac pulvinar quam tortor a
                                 velit. Praesent ultrices erat ante, in ultricies augue ultricies faucibus. Nam tellus
                                 nibh, ullamcorper at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci varius
                                 natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                            <div class="main-button">
-                                <a href="#">View Schedule</a>
-                            </div>
                         </article>
                         <article id='tabs-3'>
                             <img src="{{ asset('assets/images/training-image-03.jpg') }}" alt="Third Class">
-                            <h4>Third Training Class</h4>
+                            <h4>Kelas Khusus Perempuan</h4>
                             <p>Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit
                                 amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id
                                 scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel,
                                 accumsan a neque.</p>
-                            <div class="main-button">
-                                <a href="#">View Schedule</a>
-                            </div>
                         </article>
                         <article id='tabs-4'>
                             <img src="{{ asset('assets/images/training-image-04.jpg') }}" alt="Fourth Training">
-                            <h4>Fourth Training Class</h4>
+                            <h4>Kelas Terapi Kesehatan</h4>
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
                                 egestas. Aenean ultrices elementum odio ac tempus. Etiam eleifend orci lectus, eget
                                 venenatis ipsum commodo et.</p>
-                            <div class="main-button">
-                                <a href="#">View Schedule</a>
-                            </div>
                         </article>
                     </section>
                 </div>
@@ -262,73 +296,6 @@
     </section>
     <!-- ***** Our Classes End ***** -->
 
-    <section class="section" id="schedule">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading dark-bg">
-                        <h2>Classes <em>Schedule</em></h2>
-                        <img src="{{ asset('assets/images/line-dec.png') }}" alt="">
-                        <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor,
-                            ultricies fermentum massa consequat eu.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="filters">
-                        <ul class="schedule-filter">
-                            <li class="active" data-tsfilter="monday">Monday</li>
-                            <li data-tsfilter="tuesday">Tuesday</li>
-                            <li data-tsfilter="wednesday">Wednesday</li>
-                            <li data-tsfilter="thursday">Thursday</li>
-                            <li data-tsfilter="friday">Friday</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="schedule-table filtering">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td class="day-time">Fitness Class</td>
-                                    <td class="monday ts-item show" data-tsmeta="monday">10:00AM - 11:30AM</td>
-                                    <td class="tuesday ts-item" data-tsmeta="tuesday">2:00PM - 3:30PM</td>
-                                    <td>William G. Stewart</td>
-                                </tr>
-                                <tr>
-                                    <td class="day-time">Muscle Training</td>
-                                    <td class="friday ts-item" data-tsmeta="friday">10:00AM - 11:30AM</td>
-                                    <td class="thursday friday ts-item" data-tsmeta="thursday" data-tsmeta="friday">
-                                        2:00PM - 3:30PM</td>
-                                    <td>Paul D. Newman</td>
-                                </tr>
-                                <tr>
-                                    <td class="day-time">Body Building</td>
-                                    <td class="tuesday ts-item" data-tsmeta="tuesday">10:00AM - 11:30AM</td>
-                                    <td class="monday ts-item show" data-tsmeta="monday">2:00PM - 3:30PM</td>
-                                    <td>Boyd C. Harris</td>
-                                </tr>
-                                <tr>
-                                    <td class="day-time">Yoga Training Class</td>
-                                    <td class="wednesday ts-item" data-tsmeta="wednesday">10:00AM - 11:30AM</td>
-                                    <td class="friday ts-item" data-tsmeta="friday">2:00PM - 3:30PM</td>
-                                    <td>Hector T. Daigle</td>
-                                </tr>
-                                <tr>
-                                    <td class="day-time">Advanced Training</td>
-                                    <td class="thursday ts-item" data-tsmeta="thursday">10:00AM - 11:30AM</td>
-                                    <td class="wednesday ts-item" data-tsmeta="wednesday">2:00PM - 3:30PM</td>
-                                    <td>Bret D. Bowers</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- ***** Testimonials Starts ***** -->
     <section class="section" id="trainers">
         <div class="container">
@@ -336,7 +303,6 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
                         <h2>Expert <em>Trainers</em></h2>
-                        <img src="{{ asset('assets/images/line-dec.png') }}" alt="">
                         <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor,
                             ultricies fermentum massa consequat eu.</p>
                     </div>
