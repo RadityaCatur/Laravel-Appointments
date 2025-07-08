@@ -15,9 +15,7 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
-
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome.css') }}">
-
     <link rel="stylesheet" href="{{ asset('assets/css/templatemo-training-studio.css') }}">
 
 </head>
@@ -37,7 +35,6 @@
     </div>
     <!-- ***** Preloader End ***** -->
 
-
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
         <div class="container">
@@ -56,7 +53,7 @@
                             <li class="scroll-to-section"><a href="#penghargaan">Penghargaan</a></li>
                             <li class="scroll-to-section"><a href="#kelas">Kelas</a></li>
                             <li class="scroll-to-section"><a href="#trainers">Pelatih</a></li>
-                            <li class="scroll-to-section"><a href="#contact-us">Lokasi</a></li>
+                            <li class="scroll-to-section"><a href="#contact-us">Kontak</a></li>
                             <li class="main-button"><a href="/login">Member</a></li>
                         </ul>
                         <a class='menu-trigger'>
@@ -71,17 +68,17 @@
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner" id="top">
+    <div class="main-banner">
         <video autoplay muted loop id="bg-video">
             <source src="{{ asset('assets/images/gym-video.mp4') }}" type="video/mp4">
         </video>
 
         <div class="video-overlay header-text">
             <div class="caption">
-                <h6>disini teks disini teks</h6>
-                <h2>disini teks disini <em>teks</em></h2>
+                <h6>Bersama Ngelangi Yuk</h6>
+                <h2>Belajar Renang <em>Yuk!</em></h2>
                 <div class="main-button scroll-to-section">
-                    <a href="#features">Gabung Ngelangi Yuk!</a>
+                    <a href="#">Gabung Ngelangi</a>
                 </div>
             </div>
         </div>
@@ -100,12 +97,12 @@
                             </div>
                             <div class="content">
                                 <h4>Tentang Kami</h4>
-                                <p>Ngelangi Yuk! hadir sebagai komunitas dan penyedia les renang profesional yang lahir
+                                <p>Ngelangi Yuk hadir sebagai komunitas dan penyedia les renang profesional yang lahir
                                     dari semangat para atlet renang dan selam Kota Batu. Berdiri sejak 2021, kami
                                     berkomitmen untuk menghadirkan pengalaman belajar renang yang menyenangkan, aman,
                                     dan dapat dinikmati oleh semua kalangan.</p>
-                                <p>Kami percaya bahwa berenang bukan hanya sekadar olahraga, tetapi gaya hidup sehat
-                                    dan keterampilan penting yang wajib dikuasai sejak dini.</p>
+                                <p>Kami percaya bahwa renang bukan hanya sekadar cabang olahraga, tapi juga penunjang
+                                    gaya hidup sehat, dan keterampilan penting yang wajib dikuasai sejak dini.</p>
                             </div>
                         </li>
                     </div>
@@ -134,7 +131,7 @@
     </section>
     <!-- ***** Features Item End ***** -->
 
-    <!-- ***** Call to Action Start ***** -->
+    <!-- ***** Achievements ***** -->
     <section class="section" id="penghargaan">
         <div class="container">
             <div class="row">
@@ -177,6 +174,10 @@
                                 <p>Jenis Kelas:</p>
                             </div>
                         </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="penghargaan-items">
                         <li class="penghargaan-item">
                             <div class="left-icon">
                                 <img src="{{ asset('assets/images/logo.png') }}" alt="First One">
@@ -188,10 +189,6 @@
                                 <p>Jenis Kelas:</p>
                             </div>
                         </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="penghargaan-items">
                         <li class="penghargaan-item">
                             <div class="left-icon">
                                 <img src="{{ asset('assets/images/logo.png') }}" alt="First One">
@@ -203,33 +200,12 @@
                                 <p>Jenis Kelas:</p>
                             </div>
                         </li>
-                        <li class="penghargaan-item">
-                            <div class="left-icon">
-                                <img src="{{ asset('assets/images/logo.png') }}" alt="First One">
-                            </div>
-                            <div class="right-content">
-                                <h4>Penghargaan 5</h4>
-                                <p>Nama: </p>
-                                <p>Umur: </p>
-                                <p>Jenis Kelas:</p>
-                            </div>
-                        </li>
-                        <li class="penghargaan-item">
-                            <div class="left-icon">
-                                <img src="{{ asset('assets/images/logo.png') }}" alt="First One">
-                            </div>
-                            <div class="right-content">
-                                <h4>Penghargaan 6</h4>
-                                <p>Nama: </p>
-                                <p>Umur: </p>
-                                <p>Jenis Kelas:</p>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
     </section>
-    <!-- ***** Call to Action End ***** -->
+    <div class="section-divider" style="transform: rotate(180deg)"></div>
+    <!-- ***** Achievements ***** -->
 
     <!-- ***** Our Classes Start ***** -->
     <section class="section" id="kelas">
@@ -259,41 +235,55 @@
                 <div class="col-lg-8">
                     <section class='tabs-content'>
                         <article id='tabs-1'>
-                            <img src="{{ asset('assets/images/training-image-01.jpg') }}" alt="First Class">
-                            <h4>Kelas Grup dan Privat Anak</h4>
-                            <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend
-                                hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem
-                                tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut,
-                                accumsan diam.</p>
+                            <img src="{{ asset('assets/images/kelas-anak.png') }}" alt="First Class">
+                            <div class="class-description">
+                                <h4>Kelas Anak-anak (Grup & Private)</h4>
+                                <ul>
+                                    <li>✅ Tersedia kelas grup & private, sesuai kebutuhan anak.</li>
+                                    <li>✅ Fokus pada teknik dasar renang & keberanian di air.</li>
+                                    <li>✅Menggunakan metode menyenangkan agar anak betah belajar.</li>
+                                </ul>
+                            </div>
                         </article>
                         <article id='tabs-2'>
-                            <img src="{{ asset('assets/images/training-image-02.jpg') }}" alt="Second Training">
-                            <h4>Kelas Dewasa</h4>
-                            <p>Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac pulvinar quam tortor a
-                                velit. Praesent ultrices erat ante, in ultricies augue ultricies faucibus. Nam tellus
-                                nibh, ullamcorper at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci varius
-                                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                            <img src="{{ asset('assets/images/kelas-dewasa.jpg') }}" alt="Second Training">
+                            <div class="class-description">
+                                <h4>Kelas Dewasa</h4>
+                                <ul>
+                                    <li>✅ Untuk pemula maupun yang ingin memperbaiki teknik renang.</li>
+                                    <li>✅ Fokus pada peningkatan stamina, teknik, dan percaya diri di air.</li>
+                                    <li>✅ Tersedia sesi pagi, sore, dan malam.</li>
+                                </ul>
+                            </div>
                         </article>
                         <article id='tabs-3'>
-                            <img src="{{ asset('assets/images/training-image-03.jpg') }}" alt="Third Class">
-                            <h4>Kelas Khusus Perempuan</h4>
-                            <p>Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit
-                                amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id
-                                scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel,
-                                accumsan a neque.</p>
+                            <img src="{{ asset('assets/images/kelas-perempuan.png') }}" alt="Third Class">
+                            <div class="class-description">
+                                <h4>Kelas Khusus Perempuan</h4>
+                                <ul>
+                                    <li>✅ Kelas tertutup khusus perempuan, menjaga privasi dan kenyamanan.</li>
+                                    <li>✅ Pelatih perempuan profesional & ramah.</li>
+                                    <li>✅ Cocok untuk semua usia (remaja hingga dewasa).</li>
+                                </ul>
+                            </div>
                         </article>
                         <article id='tabs-4'>
-                            <img src="{{ asset('assets/images/training-image-04.jpg') }}" alt="Fourth Training">
-                            <h4>Kelas Terapi Kesehatan</h4>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                                egestas. Aenean ultrices elementum odio ac tempus. Etiam eleifend orci lectus, eget
-                                venenatis ipsum commodo et.</p>
+                            <img src="{{ asset('assets/images/kelas-therapy.jpg') }}" alt="Fourth Training">
+                            <div class="class-description">
+                                <h4>Kelas Pengobatan (Tulang & Syaraf Terjepit)</h4>
+                                <ul>
+                                    <li>✅ Program renang terapi untuk membantu pemulihan kondisi fisik.</li>
+                                    <li>✅ Dipandu oleh pelatih dengan pengalaman terapi air.</li>
+                                    <li>✅ Materi latihan disesuaikan kondisi & kemampuan peserta.</li>
+                                </ul>
+                            </div>
                         </article>
                     </section>
                 </div>
             </div>
         </div>
     </section>
+    <div class="section-divider"></div>
     <!-- ***** Our Classes End ***** -->
 
     <!-- ***** Testimonials Starts ***** -->
@@ -302,9 +292,9 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>Expert <em>Trainers</em></h2>
-                        <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor,
-                            ultricies fermentum massa consequat eu.</p>
+                        <h2>Pelatih <em>Hebat</em></h2>
+                        <p>Setiap pelatih siap mendampingi dan membagikan pengalaman terbaik, suasana latihan
+                            menyenangkan, penuh semangat, dan suportif</p>
                     </div>
                 </div>
             </div>
@@ -315,15 +305,14 @@
                             <img src="{{ asset('assets/images/first-trainer.jpg') }}" alt="">
                         </div>
                         <div class="down-content">
-                            <span>Strength Trainer</span>
-                            <h4>Bret D. Bowers</h4>
-                            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan
-                                church-key pour-over seitan flannel.</p>
+                            <span>Pelatih Kelas Anak</span>
+                            <h4>Salva Almayda Putri</h4>
+                            <p>Kata kata Kata kata Kata kata Kata kata Kata kata Kata kata Kata kata Kata kata Kata kata
+                                Kata kata Kata kata Kata kata Kata kata Kata kata Kata kata</p>
                             <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -334,15 +323,15 @@
                             <img src="{{ asset('assets/images/second-trainer.jpg') }}" alt="">
                         </div>
                         <div class="down-content">
-                            <span>Muscle Trainer</span>
-                            <h4>Hector T. Daigl</h4>
-                            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan
-                                church-key pour-over seitan flannel.</p>
+                            <span>Pelatih Kelas Dewasa</span>
+                            <h4>Raditya Catur Narendra</h4>
+                            <p>Tidak ada kata terlambat untuk belajar berenang! Dewasa itu capek, perlu
+                                diregangkan dengan serunya berenang. Di Ngelangi Yuk jadwal padatmu tidak menjadi
+                                halangan loh!</p>
                             <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -350,18 +339,17 @@
                 <div class="col-lg-4">
                     <div class="trainer-item">
                         <div class="image-thumb">
-                            <img src="{{ asset('assets/images/third-trainer.jpg') }}" alt="">
+                            <img src="{{ asset('assets/images/first-trainer.jpg') }}" alt="">
                         </div>
                         <div class="down-content">
-                            <span>Power Trainer</span>
-                            <h4>Paul D. Newman</h4>
-                            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan
-                                church-key pour-over seitan flannel.</p>
+                            <span>Pelatih Kelas Terapi</span>
+                            <h4>Salva Almayda Putri</h4>
+                            <p>Kata kata Kata kata Kata kata Kata kata Kata kata Kata kata Kata kata Kata kata Kata kata
+                                Kata kata Kata kata Kata kata Kata kata Kata kata Kata kata</p>
                             <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -374,49 +362,40 @@
     <!-- ***** Contact Us Area Starts ***** -->
     <section class="section" id="contact-us">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="row no-gutters">
+                <div class="col-lg-6 col-md-6 col-xs-12 map-container">
                     <div id="map">
                         <iframe
-                            src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.2887186692806!2d112.50823617476686!3d-7.864824992157161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f94bde5720df%3A0xfb149fce5cf80066!2sRoyal%20Hotel%20%26%20Villa%20Batu!5e0!3m2!1sen!2sid!4v1751950124124!5m2!1sen!2sid"
+                            frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div class="contact-form">
-                        <form id="contact" action="" method="post">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12">
-                                    <fieldset>
-                                        <input name="name" type="text" id="name" placeholder="Your Name*" required="">
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-6 col-sm-12">
-                                    <fieldset>
-                                        <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*"
-                                            placeholder="Your Email*" required="">
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-12 col-sm-12">
-                                    <fieldset>
-                                        <input name="subject" type="text" id="subject" placeholder="Subject">
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                    <fieldset>
-                                        <textarea name="message" rows="6" id="message" placeholder="Message"
-                                            required=""></textarea>
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                    <fieldset>
-                                        <button type="submit" id="form-submit" class="main-button">Send Message</button>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </form>
+                <div class="col-lg-6 col-md-6 col-xs-12 contact-col">
+                    <div class="contact-form d-flex align-items-center">
+                        <div class="contact-info-box">
+                            <h4>Kontak Kami</h4>
+                            <ul class="contact-info-list">
+                                <li>
+                                    <span class="label">🏢 Nama</span><span class="separator">:</span><span
+                                        class="value">Ngelangi Yuk!</span>
+                                </li>
+                                <li>
+                                    <span class="label">📍 Alamat</span><span class="separator">:</span><span
+                                        class="value">Jl. Mardian No. 20, Bumiaji, Kota Batu</span>
+                                </li>
+                                <li>
+                                    <span class="label">📧 Email</span><span class="separator">:</span><span
+                                        class="value">lesrenangkotabatu@gmail.com</span>
+                                </li>
+                                <li>
+                                    <span class="label">📞 Telepon</span><span class="separator">:</span><span
+                                        class="value">081327915151</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -427,17 +406,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; 2020 Training Studio
+                    <p>Copyright &copy; 2025 Ngelangi Yuk
 
-                        - Designed by <a rel="nofollow" href="https://templatemo.com" class="tm-text-link"
-                            target="_parent">TemplateMo</a><br>
-
-                        Distributed by <a rel="nofollow" href="https://themewagon.com" class="tm-text-link"
-                            target="_blank">ThemeWagon</a>
+                        - Web Designed by <a rel="nofollow" href="#" class="tm-text-link" target="_parent">Raditya Catur
+                            Narendra</a><br>
 
                     </p>
-
-                    <!-- You shall support us a little via PayPal to info@templatemo.com -->
 
                 </div>
             </div>
