@@ -758,6 +758,7 @@ Penghargaan
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  margin-top: 30px;
 }
 
 .cta-content h2 {
@@ -819,11 +820,6 @@ Penghargaan
 Kelas
 --------------------------------------------
 */
-
-#kelas {
-  margin-bottom: 140px;
-}
-
 #tabs ul {
   margin: 0;
   padding: 0;
@@ -1019,6 +1015,27 @@ Kontak
   border: none;
 }
 
+.row.gx-3 {
+  --bs-gutter-x: 1.5rem; /* bootstrap gap */
+}
+
+.map-container {
+  min-height: 500px;
+  padding: 0 10px; /* jarak antar iframe */
+}
+
+.map-frame {
+  width: 100%;
+  height: 100%;
+}
+
+.map-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
 .contact-col {
   background-image: url(../images/pool-bg.jpg);
   background-position: center;
@@ -1083,6 +1100,17 @@ Kontak
 
 .contact-info-list .value {
   flex: 1;
+}
+
+@media (max-width: 767.98px) {
+  .contact-col, .map-container {
+    min-height: 300px;
+    padding: 15px;
+  }
+
+  .contact-info-box {
+    padding: 30px 20px;
+  }
 }
 
 
