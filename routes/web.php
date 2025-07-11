@@ -1,16 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\HomeController;
-use App\Http\Controllers\Admin\PermissionsController;
-use App\Http\Controllers\Admin\RolesController;
-use App\Http\Controllers\Admin\UsersController;
-use App\Http\Controllers\Admin\ServicesController;
-use App\Http\Controllers\Admin\EmployeesController;
-use App\Http\Controllers\Admin\ClientsController;
-use App\Http\Controllers\Admin\AppointmentsController;
-use App\Http\Controllers\Admin\SystemCalendarController;
-
+Route::redirect('/', '/login');
 Route::get('/', function () {
     return view('landing');
 })->name('landing');
@@ -19,30 +9,36 @@ Route::redirect('/login', '/login');
 Route::redirect('/home', '/admin');
 Auth::routes(['register' => false]);
 
-Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], function () {
-    Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {
+Route::get('/', 'HomeController@index')->name('home');
+// Permissions
+Route::delete('permissions/destroy', 'PermissionsController@massDestroy')->name('permissions.massDestroy');
+Route::resource('permissions', 'PermissionsController');
 
-    Route::delete('permissions/destroy', [PermissionsController::class, 'massDestroy'])->name('permissions.massDestroy');
-    Route::resource('permissions', PermissionsController::class);
+// Roles
+Route::delete('roles/destroy', 'RolesController@massDestroy')->name('roles.massDestroy');
+Route::resource('roles', 'RolesController');
 
-    Route::delete('roles/destroy', [RolesController::class, 'massDestroy'])->name('roles.massDestroy');
-    Route::resource('roles', RolesController::class);
+// Users
+Route::delete('users/destroy', 'UsersController@massDestroy')->name('users.massDestroy');
+Route::resource('users', 'UsersController');
 
-    Route::delete('users/destroy', [UsersController::class, 'massDestroy'])->name('users.massDestroy');
-    Route::resource('users', UsersController::class);
+// Services
+Route::delete('services/destroy', 'ServicesController@massDestroy')->name('services.massDestroy');
+Route::resource('services', 'ServicesController');
 
-    Route::delete('services/destroy', [ServicesController::class, 'massDestroy'])->name('services.massDestroy');
-    Route::resource('services', ServicesController::class);
+// Employees
+Route::delete('employees/destroy', 'EmployeesController@massDestroy')->name('employees.massDestroy');
+Route::post('employees/media', 'EmployeesController@storeMedia')->name('employees.storeMedia');
+Route::resource('employees', 'EmployeesController');
 
-    Route::delete('employees/destroy', [EmployeesController::class, 'massDestroy'])->name('employees.massDestroy');
-    Route::post('employees/media', [EmployeesController::class, 'storeMedia'])->name('employees.storeMedia');
-    Route::resource('employees', EmployeesController::class);
+// Clients
+Route::delete('clients/destroy', 'ClientsController@massDestroy')->name('clients.massDestroy');
+Route::resource('clients', 'ClientsController');
 
-    Route::delete('clients/destroy', [ClientsController::class, 'massDestroy'])->name('clients.massDestroy');
-    Route::resource('clients', ClientsController::class);
+// Appointments
+Route::delete('appointments/destroy', 'AppointmentsController@massDestroy')->name('appointments.massDestroy');
+Route::resource('appointments', 'AppointmentsController');
 
-    Route::delete('appointments/destroy', [AppointmentsController::class, 'massDestroy'])->name('appointments.massDestroy');
-    Route::resource('appointments', AppointmentsController::class);
-
-    Route::get('system-calendar', [SystemCalendarController::class, 'index'])->name('systemCalendar');
+Route::get('system-calendar', 'SystemCalendarController@index')->name('systemCalendar');
 });
