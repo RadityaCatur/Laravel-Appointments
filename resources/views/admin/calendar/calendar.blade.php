@@ -38,7 +38,7 @@
     }
 
     .fc-slats td {
-    height: 155px !important;
+    height: 200px !important;
     }
 
     .fc-tooltip {
@@ -59,8 +59,8 @@
     }
 
     .fc-event img {
-      width: 155px;
-      height: 155px;
+      width: 100px;
+      height: 100px;
     }
 
     .fc-event {
