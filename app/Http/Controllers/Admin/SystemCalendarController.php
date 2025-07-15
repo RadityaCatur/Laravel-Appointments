@@ -20,10 +20,13 @@ class SystemCalendarController extends Controller
             }
 
             $events[] = [
-                'title' => $appointment->client->name . ' ('.$appointment->employee->name.')',
-                'start' => $appointment->start_time,
-                'url'   => route('admin.appointments.edit', $appointment->id),
-            ];
+    'title' => $appointment->employee->name,
+    'start' => $appointment->start_time,
+    'end'   => $appointment->finish_time,
+    'url'   => route('admin.appointments.edit', $appointment->id),
+    'employee_photo_url' => $appointment->employee->photo ? $appointment->employee->photo->getUrl('thumb') : null,
+];
+
         }
 
         return view('admin.calendar.calendar', compact('events'));

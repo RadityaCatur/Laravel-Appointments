@@ -57,10 +57,10 @@ class EmployeesController extends Controller
             $table->editColumn('photo', function ($row) {
                 if ($photo = $row->photo) {
                     return sprintf(
-                        '<a href="%s" target="_blank"><img src="%s" width="50px" height="50px"></a>',
-                        $photo->url,
-                        $photo->thumbnail
-                    );
+            '<a href="%s" target="_blank"><img src="%s" style="width:100px; height:100px; object-fit: cover; border-radius: 8px;"></a>',
+            $photo->url,
+            $photo->getUrl('thumb')
+        );
                 }
 
                 return '';

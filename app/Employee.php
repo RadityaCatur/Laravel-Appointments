@@ -36,7 +36,11 @@ class Employee extends Model implements HasMedia
 
     public function registerMediaConversions(Media $media = null): void
     {
-        $this->addMediaConversion('thumb')->width(50)->height(50);
+        $this->addMediaConversion('thumb')
+        ->width(300)
+        ->height(300)
+        ->sharpen(10)
+        ->nonQueued();
     }
 
     public function appointments()
