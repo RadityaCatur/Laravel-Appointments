@@ -23,8 +23,8 @@
     }
 
     .fc-event img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     border-radius: 10px;
     display: block;
@@ -151,6 +151,15 @@
         'font-weight': 'bold',
         'font-size': '14px',
         'margin-top': '5px'
+        })
+      );
+
+      element.find('.fc-content').append(
+        $('<div>').text(
+        moment(event.start).format('HH:mm') + ' - ' + moment(event.end).format('HH:mm')
+        ).css({
+        'font-size': '12px',
+        'margin-top': '4px'
         })
       );
       },
